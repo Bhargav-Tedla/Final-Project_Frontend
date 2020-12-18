@@ -2,38 +2,59 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
-import { LoginComponent } from './login/login.component';
 import { P404Component } from './p404/p404.component';
 import { ContactComponent } from './contact/contact.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { BudgetComponent } from './Budget/Budget.component';
+
 const routes: Routes = [
   {
-  path: '',
-  component: HomepageComponent,
-  pathMatch: 'full',
+    path: '',
+    component: LoginComponent,
+    pathMatch : 'full'
   },
   {
     path: 'about',
-    component: AboutComponent,
+    component: AboutComponent
   },
   {
     path: 'login',
     component: LoginComponent,
-  },
-  {
-    path: 'Personal Budget',
-    component: HomepageComponent,
 
   },
   {
-    path: 'Contact',
-    component: ContactComponent,
+    path: 'contact',
+    component: ContactComponent
+  },
+  {
+    path: 'homepage',
+    component: HomepageComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'signup',
+    component:SignupComponent,
+    pathMatch : 'full'
+  },
+  {
+    path: 'addbudget',
+    component: DashboardComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
+  {
+    path:'logout',
+    component: LoginComponent
   },
 
   {
     path: '**',
     component: P404Component
   }
-
 ];
 
 @NgModule({

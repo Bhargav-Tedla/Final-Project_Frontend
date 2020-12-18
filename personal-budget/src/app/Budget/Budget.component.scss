@@ -1,5 +1,5 @@
-.login-page{
-	width: 360px;
+.home-page{
+	width: auto;
 	padding: 2% 0 0;
 	margin: auto;
 }
@@ -7,12 +7,13 @@ h1{
   color:  #3d4174;
 }
 .form{
-	position: relative;
+	position: static;
+  border: 3px solid #73AD21;
 	z-index: 1;
-  background: #c1d1f5;
-	max-width: 400px;
+  background: #909bb8;
+	max-width: 300px;
   margin: 0 auto 50px;
-  padding: 0px;
+  padding: 20px;
 	text-align: center;
 
 }
@@ -20,19 +21,14 @@ h1{
 .form input{
 	font-family: "Roboto",sans-serif;
 	outline: 1;
-	background:#ffffff;
-	width: 90%;
-	border: 0;
-	margin: 0 auto 10px;
+	background:#f5f3f3;
+	width: 100%;
 	padding: 15px;
-	box-sizing: border-box;
-	font-size: 15px;
-
 }
 
 .form button{
-  text-decoration: none;
-  background: #535788;
+  text-decoration: underline;
+  background: #383c63;
   color: #ffffff;
   width: 90px;
   height:30px;
